@@ -1,0 +1,38 @@
+# mysql
+mysql:
+  kscmaster:
+    service: "ksc"
+    database: "ksc"
+    addr: "127.0.0.1"
+    user: "root"
+    password: "RraDEZgfhY"
+    maxidleconns: 50
+    maxopenconns: 2000
+    connMaxLifeTime: 3600s
+    connTimeOut: 1500ms
+    writeTimeOut: 3s
+    readTimeOut: 3s
+
+# redis
+redis:
+  olredis:
+    service: olredis
+    addr: "codis.basic.suanshubang.cc:8700"
+    user: "redis-offline"
+    password: ""
+    maxIdle: 10
+    maxActive: 1000
+    idleTimeout: 5m
+    connTimeOut: 1200ms
+    readTimeOut: 1200ms
+    writeTimeOut: 1200ms
+    maxConnLifetime: 10m
+
+# es
+elastic:
+  oles:
+    service: oles
+    addr: "http://172.29.151.44:9200/"
+    username: "homework"
+    password: "homework"
+    gzip: true
